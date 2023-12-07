@@ -5,7 +5,7 @@ export const validateImageApi = (
   req: Request,
   res: Response,
   next: NextFunction
-) => {
+): Response | void => {
   const queryStrings = req.query;
 
   let filename: string;
